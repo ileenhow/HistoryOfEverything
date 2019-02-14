@@ -16,7 +16,7 @@ import 'package:timeline/timeline/timeline_utils.dart';
 typedef ShowMenuCallback();
 typedef SelectItemCallback(TimelineEntry item);
 
-/// This is the Stateful Widget associated with the Timeline object. 
+/// This is the Stateful Widget associated with the Timeline object.
 /// It is built from a [focusItem], that is the event the [Timeline] should
 /// focus on when it's created.
 class TimelineWidget extends StatefulWidget {
@@ -29,7 +29,7 @@ class TimelineWidget extends StatefulWidget {
 }
 
 class _TimelineWidgetState extends State<TimelineWidget> {
-  static const String DefaultEraName = "Birth of the Universe";
+  static const String DefaultEraName = "宇宙的诞生";
   static const double TopOverlap = 56.0;
 
   /// These variables are used to calculate the correct viewport for the timeline
@@ -38,12 +38,12 @@ class _TimelineWidgetState extends State<TimelineWidget> {
   double _scaleStartYearStart = -100.0;
   double _scaleStartYearEnd = 100.0;
 
-  /// When touching a bubble on the [Timeline] keep track of which 
+  /// When touching a bubble on the [Timeline] keep track of which
   /// element has been touched in order to move to the [article_widget].
   TapTarget _touchedBubble;
   TimelineEntry _touchedEntry;
 
-  /// Which era the Timeline is currently focused on. 
+  /// Which era the Timeline is currently focused on.
   /// Defaults to [DefaultEraName].
   String _eraName;
 
@@ -57,8 +57,8 @@ class _TimelineWidgetState extends State<TimelineWidget> {
   /// showing the favorite elements already on the timeline.
   bool _showFavorites = false;
 
-  /// The following three functions define are the callbacks used by the 
-  /// [GestureDetector] widget when rendering this widget. 
+  /// The following three functions define are the callbacks used by the
+  /// [GestureDetector] widget when rendering this widget.
   /// First gather the information regarding the starting point of the scaling operation.
   /// Then perform the update based on the incoming [ScaleUpdateDetails] data,
   /// and pass the relevant information down to the [Timeline], so that it can display
@@ -93,7 +93,7 @@ class _TimelineWidgetState extends State<TimelineWidget> {
   }
 
   /// The following two callbacks are passed down to the [TimelineRenderWidget] so
-  /// that it can pass the information back to this widget. 
+  /// that it can pass the information back to this widget.
   onTouchBubble(TapTarget bubble) {
     _touchedBubble = bubble;
   }
@@ -109,7 +109,7 @@ class _TimelineWidgetState extends State<TimelineWidget> {
   /// If the [TimelineRenderWidget] has set the [_touchedBubble] to the currently
   /// touched bubble on the timeline, upon removing the finger from the screen,
   /// the app will check if the touch operation consists of a zooming operation.
-  /// 
+  ///
   /// If it is, adjust the layout accordingly.
   /// Otherwise trigger a [Navigator.push()] for the tapped bubble. This moves
   /// the app into the [ArticleWidget].
@@ -150,9 +150,9 @@ class _TimelineWidgetState extends State<TimelineWidget> {
     }
   }
 
-  /// When performing a long-press operation, the viewport will be adjusted so that 
-  /// the visible start and end times will be updated according to the [TimelineEntry] 
-  /// information. The long-pressed bubble will float to the top of the viewport, 
+  /// When performing a long-press operation, the viewport will be adjusted so that
+  /// the visible start and end times will be updated according to the [TimelineEntry]
+  /// information. The long-pressed bubble will float to the top of the viewport,
   /// and the viewport will be scaled appropriately.
   void _longPress() {
     EdgeInsets devicePadding = MediaQuery.of(context).padding;

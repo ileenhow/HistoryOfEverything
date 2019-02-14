@@ -1,6 +1,6 @@
 [
     {
-        "label": "Birth of the Universe",
+        "label": "宇宙诞生",
         "background": "#083158",
         "color": "#ffffff",
         "asset":"milky",
@@ -9,27 +9,27 @@
             {
                 "start": -15000000000,
                 "end": -10000000000,
-                "label": "Big Bang"
+                "label": "大爆炸"
             },
             {
                 "start": -4625000000,
                 "end": -4560000000,
-                "label": "Birth of the Sun"
+                "label": "太阳诞生"
             },
             {
                 "start": -4520000000,
                 "end": -4490000000,
-                "label": "Earth is Born"
+                "label": "地球诞生"
             },
             {
                 "start": -4250000000,
                 "end": -3890000000,
-                "label": "Heavy Bombardment"
+                "label": "重轰炸时期"
             }
         ]
     },
     {
-        "label": "Life on Earth",
+        "label": "地球上的生命",
         "background": "#fdfdfd",
         "color": "#000000",
         "asset":"fish",
@@ -38,27 +38,27 @@
             {
                 "start": -4300000000,
                 "end": -3560000000,
-                "label": "Single Celled Organisms"
+                "label": "单细胞有机体"
             },
             {
                 "start": -638000000,
                 "end": -350000000,
-                "label": "Animals"
+                "label": "动物"
             },
             {
                 "start": -320000000,
                 "end": -25000000,
-                "label": "Dinosaur Age"
+                "label": "恐龙时代"
             },
             {
                 "start": -215550384.05521244,
                 "end": -167149739.29848185,
-                "label": "Mammals"
+                "label": "哺乳动物"
             },
             {
                 "start": -6800000,
                 "end": -3000000,
-                "label": "Humans"
+                "label": "人类"
             }
         ]
     },
